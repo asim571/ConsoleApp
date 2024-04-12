@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 
 namespace ConsoleApp1
 {
@@ -18,7 +17,7 @@ namespace ConsoleApp1
                 Console.WriteLine("COnnection Established Succesfully");
                 int id = 1;
                 string name = "Asim";
-                string stream = "Csit";
+                string stream = "CSIT";
                 string query = "INSERT INTO students VALUES(" + id + ",'" + name + "','" + stream + "')";
                 SqlCommand sqlcmd = new SqlCommand(query, conn);
                 //Executing the sql query
@@ -45,3 +44,5 @@ namespace ConsoleApp1
     }
 
 }
+
+
